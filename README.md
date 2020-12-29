@@ -2,23 +2,23 @@
 
 #### SET UP THE PROJECT
 To run the docker and build the containers. The option `--build` is to force build, and `-d` is
-to detach and not block the terminal
+to detach and not block the terminal.
 ```
 docker-compose up --build -d
 ```
 #### Dependencies
-Need to rum on the root of project
+Need to run on the root of project
 ```
-npm run install
+npm install
 ```
 Access the PHP container and run the `composer install`
 ```
-docker exec -ti php_fpm_jetimob5 bash
+docker exec -ti php7.4_fpm_jet_project bash
 composer install
 ```
 or use this short version
 ```
-docker exec -ti php_fpm_jetimob5 composer install
+docker exec -ti php7.4_fpm_jet_project composer install
 ```
 
 
